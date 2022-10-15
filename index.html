@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pokemon catalog</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Pokemon <span>catalog</span></h1>
+        <form onsubmit="return false">
+          <input type="text" placeholder="Search" id="search" name="search" />
+        </form>
+      </header>
+      <main>
+        <div class="loadedPokemonCards"></div>
+        <button>Load more</button>
+        <div class="loader">
+          <i class="fa-solid fa-circle" id="firstDot"></i>
+          <i class="fa-solid fa-circle" id="secondDot"></i>
+          <i class="fa-solid fa-circle" id="thirdDot"></i>
+        </div>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/1f1fac6327.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
